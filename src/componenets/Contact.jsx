@@ -12,7 +12,7 @@ import themeContext from '../context/Contex';
              Contact
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae sapiente perspiciatis accusantium asperiores odio aut explicabo hic voluptatibus ex deserunt facere maiores labore fugiat, ipsum minus nesciunt libero. Dicta optio a cum dignissimos quod quaerat!
+             Lets work together!!
             </p>
              <div className="p-1 w-full pt-4 mt-2  border-gray-200 text-center">
                 <a className="text-rose-500">pritamnagarp2@gmail.com</a>
