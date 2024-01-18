@@ -6,11 +6,71 @@ import themeContext from '../context/Contex';
      
   return (
     <section className={`text-${!mode?'gray':'teal'}-100 font-mono body-font relative`}>
-        <div style={{height:'80vh'}}  className="container flex px-3 py-3 mx-auto">
-          <div className="flex flex-col text-center w-full mb-1">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-rose-500">
-             Contact
-            </h1>
+      <div className="flex justify-center">  <h1 className="sm:text-3xl font-serif text-2xl font-medium title-font mb-4 text-rose-500">
+             Contact Me
+            </h1></div>
+        <div style={{height:'80vh'}}  className="container flex flex-col sm:flex-row px-3 py-3 mx-auto">
+         
+               <div className="lg:w-1/2   md:w-2/3 mx-auto ">
+            <form action="https://getform.io/f/0ddd73f8-4dba-4a9a-b492-ea6161ba5172" method="POST">
+            <div className="flex flex-wrap -m-2">
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                    
+                  <label for="name" className={`leading-7 text-sm text-${!mode?'white':'black'}`}>
+                    Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    className="w-full bg-gray-900 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="p-2 w-1/2">
+                <div className="relative">
+                  <label
+                    for="email"
+                  className={`leading-7 text-sm text-${!mode?'white':'black'}`}
+                  >
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    className="w-full bg-gray-900 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                  />
+                </div>
+              </div>
+              <div className="p-2 w-full">
+                <div className="relative">
+                  <label
+                    for="message"
+                    className={`leading-7 text-sm text-${!mode?'white':'black'}`}
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    className="w-full bg-gray-900 rounded border border-grey-800 focus:border-indigo-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                  ></textarea>
+                </div>
+              </div>
+              <div className="p-2 w-full">
+                <button className="flex mx-auto text-white bg-rose-500 border-0  py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-sm">
+                 Submit
+                </button>
+              
+              </div>
+              
+            </div>
+            
+         </form> </div>
+          <div className="flex flex-col text-center w-full mt-8 mb-1">
+            
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
              Lets work together!!
             </p>
@@ -82,64 +142,7 @@ import themeContext from '../context/Contex';
                 </span>
               </div>
           </div>
-          <div className="lg:w-1/2 md:w-2/3 mx-auto">
-            <form action="https://getform.io/f/0ddd73f8-4dba-4a9a-b492-ea6161ba5172" method="POST">
-            <div className="flex flex-wrap -m-2">
-              <div className="p-2 w-1/2">
-                <div className="relative">
-                    
-                  <label for="name" className={`leading-7 text-sm text-${!mode?'white':'black'}`}>
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full bg-gray-900 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                </div>
-              </div>
-              <div className="p-2 w-1/2">
-                <div className="relative">
-                  <label
-                    for="email"
-                  className={`leading-7 text-sm text-${!mode?'white':'black'}`}
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    className="w-full bg-gray-900 rounded border border-gray-300 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                </div>
-              </div>
-              <div className="p-2 w-full">
-                <div className="relative">
-                  <label
-                    for="message"
-                    className={`leading-7 text-sm text-${!mode?'white':'black'}`}
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    className="w-full bg-gray-900 rounded border border-grey-800 focus:border-indigo-500 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  ></textarea>
-                </div>
-              </div>
-              <div className="p-2 w-full">
-                <button className="flex mx-auto text-white bg-rose-500 border-0  py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-sm">
-                 Submit
-                </button>
-              
-              </div>
-              
-            </div>
-            
-         </form> </div>
+      
         </div>
       </section>
   );
