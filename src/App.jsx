@@ -28,14 +28,15 @@ function App() {
 
   return (
     <>
-   <div className={` static  ${value} h-screen  text`}>
+   <div className={` static  ${value}  text`}>
     <div className='border-b-2 border-black' > <Header></Header></div>
-    <br/><br />
-    <main >
+    <br/>
+   
+    <main>
           <Outlet/>
         </main>
     
-   <div className={`border-t-2 border-black absolute bottom-0 w-full`}><Footer ></Footer></div></div>
+   <div className={`border-t-2 border-black  bottom-0 w-full`}><Footer ></Footer></div></div>
     </>
   )
 }

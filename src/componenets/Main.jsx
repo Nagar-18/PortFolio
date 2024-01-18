@@ -20,12 +20,14 @@ useEffect(()=>{
   // setMode(!mode);
 },[mode])
   return (
-    <div className={`w-full h-96 text-${value}  font-semibold font-sans`} >
-        <div><h1 className=' flex justify-around  text-6xl text-teal-400 mb-4'>Pritam Nagar</h1></div>
+    <><br/>
+    <div style={{height:'80vh'}} className={`w-full  text-${value}  mt-8  font-semibold font-sans`} >
+        <div><h1 className=' flex justify-around  text-5xl text-teal-400 mb-4'>Pritam Nagar</h1></div>
         <div className='flex justify-around text-2xl mb-4'>React Devloper and Designer </div>
-        <div className='flex justify-around '><p >Freelancer providing services for programming and design content.</p></div>
+        <div className='flex justify-center m-auto   px-9 mb-4'>Freelancer providing services for programming and design content.</div>
         <div className='flex justify-around  mb-6'>  <p>Join me down below & let's get Cracking. </p></div>
-        <div className=' justify-around flex px-5'>  <div className="absolute mx-5  px-7 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        {/* <div className=' flex justify-around px-5'>   */}
+        <div className="flex justify-center">
                 <a
                   type="button"
                   href='https://github.com/Nagar-18/'
@@ -59,8 +61,9 @@ useEffect(()=>{
                 </div>
                
                 
-              </div>
+              {/* </div> */}
     </div>
+    </>
   )
 }
 

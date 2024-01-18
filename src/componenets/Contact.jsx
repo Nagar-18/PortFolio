@@ -6,7 +6,7 @@ import themeContext from '../context/Contex';
      
   return (
     <section className={`text-${!mode?'gray':'teal'}-100 font-mono body-font relative`}>
-        <div className="container flex px-3 py-2 mx-auto">
+        <div style={{height:'80vh'}}  className="container flex px-3 py-3 mx-auto">
           <div className="flex flex-col text-center w-full mb-1">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-rose-500">
              Contact

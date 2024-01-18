@@ -76,9 +76,10 @@ const handleSubmit=()=>{
               </div>
               <div className="absolute px-7 inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 
-                 <button className='bg-gray-900  text-gray-300 hover:bg-gray-100 hover:text-black
-                          rounded-md px-3 mx-3 py-2 text-sm font-medium' >Resume</button>
+                 <button  className='bg-gray-900  text-gray-300 hover:bg-gray-100 hover:text-black
+                          rounded-md px-3 mx-3 py-2 text-sm font-medium' ><a target='_blank' href='https://drive.google.com/file/d/1Nbx-WDelxU3oPuAJxjM2y0VIp1RZDa0U/view?usp=sharing'>Resume</a></button>
              <button onClick={handleSubmit} className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+
               {!mode?<SunIcon className="block h-6 w-6" color='white'/>: <MoonIcon className="block h-6 w-6" color='white' />}</button>
                
                 

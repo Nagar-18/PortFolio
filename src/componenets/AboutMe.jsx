@@ -43,7 +43,7 @@ const AboutMe = () => {
       const {mode} =useContext(themeContext);
   return (
     <>
-       <div className=' flex justify-evenly'>
+       <div className=' flex justify-evenly p-4'>
         {
 tech.map((e)=>{
 return (<div key={e.techsrc} className={`w-20 h-20 border border-r-3  p-4 ${!mode?e.style:'border-black'}`}><img src={e.techsrc}>
@@ -51,9 +51,9 @@ return (<div key={e.techsrc} className={`w-20 h-20 border border-r-3  p-4 ${!mod
 })
         }
        </div>
-       <div className={`px-28 py-10 text-${!mode?'white':'black'} flex justify-center align-middle`}>
+       <div className={`flex justify-around text-${!mode?'white':'black'}  px-14 py-10`}>
           
-            <div className='text-md font-mono'>
+            <div className='text-md font-mono '>
                 <h5>(ABOUT ME)</h5>
                 <p>I am react developer curretly pursuing Btech in cse from indore institute of science and technology. </p>
                 <p>Furthermore, my passion for Data Structures and Algorithms has allowed me to tackle complex problem- solving scenarios efficiently. I have actively engaged in algorithmic challenges, participating in coding competitions and consistently honing my skills..</p>
