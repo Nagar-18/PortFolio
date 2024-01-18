@@ -36,17 +36,9 @@ const projects=[{
 const Project = () => {
     
   return (
-    <div  className='flex flex-col my-4 sm:flex-row justify-evenly '>
+    <div  className='flex flex-col my-4  px-4 sm:flex-row sm:justify-evenly  '>
 
-     {/* <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        modules={[Pagination]}
-        className="mySwiper flex flex-col"
-      > */}
+   
      {projects.map((project)=>{
            return<Card key={project.id}  {...project} />
 })

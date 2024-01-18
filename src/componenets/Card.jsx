@@ -9,7 +9,7 @@ const Card = (props) => {
     <div>
       
 
-<div className={`max-w-sm  my-3  w-80 bg-black border border-gray-200 rounded-lg shadow dark:bg-${!mode?'grey':'teal'}-800 dark:border-gray-700`}>
+<div className={`max-w-sm m-auto  my-3  w-80 bg-black border border-gray-200 rounded-lg shadow dark:bg-${!mode?'grey':'teal'}-800 dark:border-gray-700`}>
     <a href="#">
         {/* <img className="rounded-t-lg w-full h-10" src={props.id==1?blogimg:null} alt="" /> */}
     </a>
