@@ -21,7 +21,7 @@ function App() {
   }
   else
   {
-    setValue("bg-teal-100")
+    setValue("bg-[#57b4c588]")
   }
   
  },[mode])

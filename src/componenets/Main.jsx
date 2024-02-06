@@ -22,7 +22,7 @@ useEffect(()=>{
   return (
     <><br/>
     <div style={{height:'80vh'}} className={`w-full  text-${value}  mt-8  font-semibold font-sans`} >
-        <div><h1 className=' flex justify-around  text-5xl text-teal-400 mb-4'>Pritam Nagar</h1></div>
+        <div><h1 className={`flex justify-around  text-5xl ${!mode?"text-teal-400":"text-slate-500"} mb-4`}>Pritam Nagar</h1></div>
         <div className='flex justify-around text-2xl mb-4'>React Devloper and Designer </div>
         <div className='flex justify-center m-auto   px-9 mb-4'>Freelancer providing services for programming and design content.</div>
         <div className='flex justify-around  mb-6'>  <p>Join me down below & let's get Cracking. </p></div>

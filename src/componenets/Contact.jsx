@@ -5,13 +5,13 @@ import themeContext from '../context/Contex';
     const {mode} =useContext(themeContext);
      
   return (
-    <section className={`text-${!mode?'gray':'teal'}-100 font-mono body-font relative`}>
+    <section    className={`text-${!mode?'gray':'teal'}-100 lg:h-full  h-screen font-mono body-font relative`}>
       <div className="flex justify-center">  <h1 className="sm:text-3xl font-serif text-2xl font-medium title-font mb-4 text-rose-500">
              Contact Me
             </h1></div>
-        <div style={{height:'80vh'}}  className="container flex flex-col sm:flex-row px-3 py-3 mx-auto">
+        <div   className="container  flex flex-col sm:flex-row px-3 py-3 mx-auto">
          
-               <div className="lg:w-1/2   md:w-2/3 mx-auto ">
+               <div className="lg:w-1/2    md:w-2/3 mx-auto ">
             <form action="https://getform.io/f/0ddd73f8-4dba-4a9a-b492-ea6161ba5172" method="POST">
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-1/2">

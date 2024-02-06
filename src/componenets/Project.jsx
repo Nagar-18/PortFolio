@@ -4,7 +4,17 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules'
 import 'swiper/css/pagination';
 import 'swiper/css';
-const projects=[{
+const projects=[
+        {
+        id:"1",
+        imgsrc:"blogimg",
+        title:"MediaX360",
+        gitLink:"https://github.com/Nagar-18/mediax360",
+        liveLink:"https://mediax360.vercel.app/",
+        content:"A fulley fledged responsive website for a startup the founder show which i created this static website by my own it is made by tailwind and react. The best part of it that the website is fully responsive which can provide a better user interface to the users.This website is created for the start-up 'The-Founder-show'"
+
+},
+        {
         id:"1",
         imgsrc:"blogimg",
         title:"BlogWebsite",
@@ -22,21 +32,21 @@ const projects=[{
         content:"BERN states a website that is formed with the intergation of centralized and decentralized backend it is a small prototype for futurestic website like voting  application. the website perform crud operation where create and update are done on blockchain and other simple operation performed on server"
 
 },
-{
-        id:"3",
-        imgsrc:"",
-        title:"StreamX",
-        gitLink:"https://github.com/Nagar-18/StreamX",
-        liveLink:"https://streamx-beta.vercel.app/",
-        content:"A realtime stream web-application like Netflix where user can filter the shows accordingly.	Fetching of real-time API  from tmdb data base  and  use the fetched data effectively.	Redux-toolkit is used for state and data management.User can filterOut shows as trending and on the basis of genres."
+// {
+//         id:"3",
+//         imgsrc:"",
+//         title:"StreamX",
+//         gitLink:"https://github.com/Nagar-18/StreamX",
+//         liveLink:"https://streamx-beta.vercel.app/",
+//         content:"A realtime stream web-application like Netflix where user can filter the shows accordingly.	Fetching of real-time API  from tmdb data base  and  use the fetched data effectively.	Redux-toolkit is used for state and data management.User can filterOut shows as trending and on the basis of genres."
 
-},
+// },
 
 ]
 const Project = () => {
     
   return (
-    <div  className='flex flex-col my-4  px-4 sm:flex-row sm:justify-evenly  '>
+    <div  className='flex flex-col my-4 lg:h-full  h-fit  md:flex-row md:justify-evenly  '>
 
    
      {projects.map((project)=>{

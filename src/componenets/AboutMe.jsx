@@ -43,7 +43,7 @@ const AboutMe = () => {
       const {mode} =useContext(themeContext);
   return (
     <>
-       <div className=' flex justify-evenly p-4'>
+       <div className=' flex   justify-evenly p-4'>
         {
 tech.map((e)=>{
 return (<div key={e.techsrc} className={`w-20 h-20 border border-r-3  p-4 ${!mode?e.style:'border-black'}`}><img src={e.techsrc}>
@@ -51,13 +51,13 @@ return (<div key={e.techsrc} className={`w-20 h-20 border border-r-3  p-4 ${!mod
 })
         }
        </div>
-       <div className={`flex justify-around text-${!mode?'white':'black'}  px-14 py-10`}>
+       <div className={`flex md:h-screen lg:h-full  h-fit justify-around text-${!mode?'white':'black'} px-8 sm:px-52 py-10`}>
           
-            <div className='text-md font-mono '>
-                <h5>(ABOUT ME)</h5>
-                <p>I am react developer curretly pursuing Btech in cse from indore institute of science and technology. </p>
-                <p>Furthermore, my passion for Data Structures and Algorithms has allowed me to tackle complex problem- solving scenarios efficiently. I have actively engaged in algorithmic challenges, participating in coding competitions and consistently honing my skills..</p>
-                <p>Additionally, my expertise in MERN stack development provides me with a solid understanding of building modern, full-stack web applications. I am skilled in utilizing MongoDB, Express.js, React.js, and Node.js to create scalable and user-friendly web solutions</p>
+            <div className='text-md font-sans w-full '>
+                <h5 className='flex justify-center text-2xl m-2 text-rose-200'>(ABOUT ME)</h5>
+                <p className='flex justify-center font-semibold text-2xl'>I am react developer curretly pursuing Btech in cse from indore institute of science and technology.
+                Furthermore, my passion for Data Structures and Algorithms has allowed me to tackle complex problem- solving scenarios efficiently. I have actively engaged in algorithmic challenges, participating in coding competitions and consistently honing my skills..
+             Additionally, my expertise in MERN stack development provides me with a solid understanding of building modern, full-stack web applications. I am skilled in utilizing MongoDB, Express.js, React.js, and Node.js to create scalable and user-friendly web solutions </p>
                 
              </div>
         </div>
